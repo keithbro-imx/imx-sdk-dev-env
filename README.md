@@ -5,19 +5,28 @@ Makes using the @imtbl/sdk with the dev environment easy!
 ## Get Started
 
 ```ts
-import { blockchainDataOverrides, orderbookOverrides } from "imtbl-sdk-dev-env";
+import {
+  blockchainDataOverrides,
+  orderbookOverrides,
+  passportOverrides,
+} from "imtbl-sdk-dev-env";
 
-const orderbookClient = new orderbook.Orderbook({
-  baseConfig: {
-    environment: envConfig.sdkEnv,
-  },
-  overrides: envConfig.orderbookOverrides,
+const baseConfig = new config.ImmutableConfiguration({
+  environment: config.Environment.SANDBOX,
 });
 
 const blockchainDataClient = new blockchainData.BlockchainData({
-  baseConfig: {
-    environment: envConfig.sdkEnv,
-  },
-  overrides: envConfig.blockchainDataOverrides,
+  baseConfig,
+  overrides: blockchainDataOverrides(),
+});
+
+const orderbookClient = new orderbook.Orderbook({
+  baseConfig,
+  overrides: orderbookOverrides(),
+});
+
+const orderbookClient = new orderbook.Orderbook({
+  baseConfig,
+  overrides: passportOverrides(baseConfig),
 });
 ```
