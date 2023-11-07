@@ -5,7 +5,7 @@ export const overrides = {
   zoneContractAddress: "0x1Bb4Fb11Ba021Bd0104F0Ee8E5F5c728Bc83d7F1",
   chainName: "imtbl-zkevm-devnet",
   apiEndpoint: "https://api.dev.immutable.com",
-};
+} as const;
 
 // Test
 () =>

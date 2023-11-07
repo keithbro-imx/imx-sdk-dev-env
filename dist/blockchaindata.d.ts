@@ -1,3 +1,3 @@
 export declare const overrides: {
-    basePath: string;
+    readonly basePath: "https://api.dev.immutable.com";
 };

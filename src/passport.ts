@@ -13,7 +13,7 @@ export const overrides = {
   passportMrBasePath: "https://api.dev.immutable.com",
   relayerUrl: "https://api.dev.immutable.com",
   zkEvmRpcUrl: "https://rpc.dev.immutable.com",
-};
+} as const;
 
 // Test
 () =>

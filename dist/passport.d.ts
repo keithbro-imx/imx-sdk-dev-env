@@ -1,14 +1,14 @@
 export declare const overrides: {
-    network: any;
-    authenticationDomain: string;
-    immutableXClient: any;
-    imxPublicApiDomain: string;
-    indexerMrBasePath: string;
-    magicProviderId: string;
-    magicPublishableApiKey: string;
-    orderBookMrBasePath: string;
-    passportDomain: string;
-    passportMrBasePath: string;
-    relayerUrl: string;
-    zkEvmRpcUrl: string;
+    readonly network: any;
+    readonly authenticationDomain: "TODO";
+    readonly immutableXClient: any;
+    readonly imxPublicApiDomain: "https://api.dev.immutable.com";
+    readonly indexerMrBasePath: "https://api.dev.immutable.com";
+    readonly magicProviderId: "TODO";
+    readonly magicPublishableApiKey: "TODO";
+    readonly orderBookMrBasePath: "https://api.dev.immutable.com";
+    readonly passportDomain: "https://api.dev.immutable.com";
+    readonly passportMrBasePath: "https://api.dev.immutable.com";
+    readonly relayerUrl: "https://api.dev.immutable.com";
+    readonly zkEvmRpcUrl: "https://rpc.dev.immutable.com";
 };
