@@ -1,5 +1,5 @@
 {
-  "name": "imtbl-sdk-dev",
+  "name": "imtbl-sdk-dev-env",
   "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
@@ -9,9 +9,11 @@
   },
   "author": "Keith Broughton",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@imtbl/sdk": "^0.28.5",
+    "@imtbl/core-sdk": "^2.4.0"
+  },
+  "devDependencies": {
     "typescript": "^5.2.2"
   }
 }
