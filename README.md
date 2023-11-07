@@ -25,7 +25,7 @@ const orderbookClient = new orderbook.Orderbook({
   overrides: orderbookOverrides(),
 });
 
-const orderbookClient = new orderbook.Orderbook({
+const passportClient = new passport.Passport({
   baseConfig,
   overrides: passportOverrides(baseConfig),
 });
