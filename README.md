@@ -2,6 +2,8 @@
 
 Makes using the @imtbl/sdk with the dev environment easy!
 
+<img src="https://media2.giphy.com/media/3o7btNa0RUYa5E7iiQ/giphy.gif"/>
+
 ## Get Started
 
 ```ts
